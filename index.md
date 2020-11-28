@@ -1,1 +1,6 @@
+---
+layout: default
+title: "Getting Started With!"
+---
+
 <h1><b style="color:blue">G</b>etting <b style="color:blue">S</b>tarted <b style="color:blue">With</b> <b style="color:green">_</b></h1>
