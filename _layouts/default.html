@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-    {% include analytics.html %}
-  </head>
-  <body>
-    {{ content}}
-  </body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>{{ page.title }} - {{ site.title }}</title>
+        <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+        {% include analytics.html %}
+    </head>
+    <body>
+        <div class="outer_layout">
+            <div class="main_page">
+                <div class="site-title"><a href="/">&nbsp;&#127968; <b>G</b>etting <b>S</b>tarted <b>with</b> _&nbsp;</a></div>
+                <div style="position:absolute; right:2px; top:3px; font-size:14px;"><span style="color: #999">http://</span><b style="color:#06A">gswith.in</b></div>
+                <div class="article">
+                    {{ content}}
+                    <div style="font-size:12px; text-align:right"><a style=" text-decoration: none; text-align:right" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeQRL9VBsXqgUTYg9ZxLUcdrWBmnvc5LKrSGnOzoj8YsIMDVQ/viewform?usp=sf_link">
+                            For corrections and clarifications, reach to us.</a></div>
+                </div>
+
+            </div>
+        </div>
+    </body>
 </html>

@@ -3,7 +3,40 @@ $bodyColor: #000000;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
 body {
-  background: $backgroundColor;
-  color: $bodyColor;
-  font-family: $bodyFont;
+    background: $backgroundColor;
+    color: $bodyColor;
+    font-family: $bodyFont;
+}
+a {
+    text-decoration: none;
+    color: $bodyColor
+}
+
+.outer_layout {
+    width: 100%;
+}
+.main_page {
+    position: relative;
+    margin: 0 auto;
+    width: 640px;
+    border: 1px solid #EEe;
+}
+.article {
+    padding: 20px;
+}
+.pre_code {
+    background-color:#f9f9f9;
+    border-left: 1px solid #f0f0f0;
+}
+.dollar {
+    user-select: none;
+}
+.site-title {
+    font-size: 18px;
+    margin:10px;
+    padding: 10px;
+}
+h1 {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #CCC;
 }
