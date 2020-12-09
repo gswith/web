@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Install LAMP (Apache, MySQL, PHP) on Ubuntu 20.04
-permalink: /install-lamp-apache-mysql-php-on-ubuntu-20.04/
+title: Install LAMP (Apache, MariaDB, PHP) on CentOS 8
+permalink: /install-lamp-apache-mariadb-php-on-centos-8/
 ---
 
 <div class="steps">
@@ -9,16 +9,14 @@ permalink: /install-lamp-apache-mysql-php-on-ubuntu-20.04/
     <div class="s">
         <div class="t">1. Install.</div>
         <pre class="c"><code>
-<span class="p">$</span>sudo apt update
-<span class="p">$</span>sudo apt install apache2 mysql-server php \
-          libapache2-mod-php php-mysql curl
+<span class="p">$</span>sudo dnf install httpd mariadb-server php php-mysqlnd curl
         </code></pre>
     </div>
 
     <div class="s">
         <div class="t">2. Service.</div>
         <pre class="c"><code>
-<span class="p">$</span>sudo systemctl restart apache2
+<span class="p">$</span>sudo systemctl restart httpd
         </code></pre>
     </div>
 
